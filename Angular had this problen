@@ -1,0 +1,53 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\pradh\OneDrive\Desktop\Angular\AngProjekt2> ng new Angpro
+You cannot run this script on the current system. For more information     
+about running scripts and setting execution policy, see 
+about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170. 
+At line:1 char:1
++ ng new Angpro
++ ~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException   
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\pradh\OneDrive\Desktop\Angular\AngProjekt2> Get-ExecutionPolicy -List
+
+MachinePolicy       Undefined
+   UserPolicy       Undefined
+      Process       Undefined
+  CurrentUser       AllSigned
+ LocalMachine       AllSigned
+
+
+PS C:\Users\pradh\OneDrive\Desktop\Angular\AngProjekt2> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+PS C:\Users\pradh\OneDrive\Desktop\Angular\AngProjekt2> ng new Angpro      
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? CSS
+CREATE Angpro/angular.json (3039 bytes)
+CREATE Angpro/package.json (1068 bytes)
+CREATE Angpro/README.md (1052 bytes)   
+CREATE Angpro/tsconfig.json (783 bytes)
+CREATE Angpro/.editorconfig (274 bytes)
+CREATE Angpro/.gitignore (604 bytes)
+CREATE Angpro/.browserslistrc (703 bytes)
+CREATE Angpro/karma.conf.js (1423 bytes)
+CREATE Angpro/tsconfig.app.json (287 bytes)
+CREATE Angpro/tsconfig.spec.json (333 bytes)
+CREATE Angpro/src/favicon.ico (948 bytes)
+CREATE Angpro/src/index.html (292 bytes)
+CREATE Angpro/src/main.ts (372 bytes)
+CREATE Angpro/src/polyfills.ts (2820 bytes)
+CREATE Angpro/src/styles.css (80 bytes)
+CREATE Angpro/src/test.ts (788 bytes)
+CREATE Angpro/src/assets/.gitkeep (0 bytes)
+CREATE Angpro/src/environments/environment.prod.ts (51 bytes)
+CREATE Angpro/src/environments/environment.ts (658 bytes)
+CREATE Angpro/src/app/app-routing.module.ts (245 bytes)
+CREATE Angpro/src/app/app.module.ts (393 bytes)
+CREATE Angpro/src/app/app.component.html (24617 bytes)
+CREATE Angpro/src/app/app.component.spec.ts (1073 bytes)
+CREATE Angpro/src/app/app.component.ts (210 bytes)
+CREATE Angpro/src/app/app.component.css (0 bytes)
+⠋ Installing packages (npm)...
